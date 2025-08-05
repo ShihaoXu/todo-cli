@@ -1,0 +1,30 @@
+[project]
+name = "taskorg"
+version = "0.1.0"
+description = "Organize your tasks with a simple command-line interface."
+readme = "README.md"
+authors = [{ name = "Shihao Xu", email = "konto.shxu@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["todo", "task"]
+dependencies = ["tinydb >= 4.8.0"]
+requires-python = ">=3.13"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project.optional-dependencies]
+dev = ["pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/ShihaoXu/todo-cli/actions"
+
+[project.scripts]
+taskorg = "taskorg.cli:app"
