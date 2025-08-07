@@ -1,5 +1,5 @@
 [project]
-name = "taskorg"
+name = "planner"
 version = "0.1.0"
 description = "Organize your tasks with a simple command-line interface."
 readme = "README.md"
@@ -24,7 +24,7 @@ build-backend = "poetry.core.masonry.api"
 dev = ["pip-tools", "pytest"]
 
 [project.urls]
-Homepage = "https://github.com/ShihaoXu/todo-cli/actions"
+Homepage = "https://github.com/ShihaoXu/todo-cli/"
 
 [project.scripts]
-taskorg = "taskorg.cli:app"
+taskorg = "planner.cli:app"
