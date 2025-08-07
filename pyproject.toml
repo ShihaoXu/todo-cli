@@ -12,7 +12,7 @@ classifiers = [
 ]
 keywords = ["todo", "task"]
 dependencies = ["tinydb >= 4.8.0"]
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 
 
 [build-system]
@@ -27,4 +27,4 @@ dev = ["pip-tools", "pytest"]
 Homepage = "https://github.com/ShihaoXu/todo-cli/"
 
 [project.scripts]
-taskorg = "planner.cli:app"
+plnr = "planner.cli:app"
