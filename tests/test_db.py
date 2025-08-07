@@ -1,4 +1,3 @@
-import tinydb
 import pytest
 from planner import db
 
